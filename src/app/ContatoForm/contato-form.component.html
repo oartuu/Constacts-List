@@ -1,25 +1,25 @@
 <div *ngIf="contato">
   <form (ngSubmit)="saveContato()">
     <label for="nome">Nome:</label>
-    <input id="nome" [(ngModel)]="contato.nome" name="nome" required />
+    <input id="nome" [(ngModel)]="contato!.nome" name="nome" required />
 
     <label for="email">Email:</label>
-    <input id="email" [(ngModel)]="contato.email" name="email" required />
+    <input id="email" [(ngModel)]="contato!.email" name="email" required />
 
     <label for="telefone">Telefone:</label>
-    <input id="telefone" [(ngModel)]="contato.telefone" name="telefone" />
+    <input id="telefone" [(ngModel)]="contato!.telefone" name="telefone" />
 
     <label for="celular">Celular:</label>
-    <input id="celular" [(ngModel)]="contato.celular" name="celular" />
+    <input id="celular" [(ngModel)]="contato!.celular" name="celular" />
 
     <label for="favorito">Favorito:</label>
-    <input id="favorito" type="checkbox" [(ngModel)]="contato.favorito" name="favorito" />
+    <input id="favorito" type="checkbox" [(ngModel)]="contato!.favorito" name="favorito" />
 
     <label for="ativo">Ativo:</label>
-    <input id="ativo" type="checkbox" [(ngModel)]="contato.ativo" name="ativo" />
+    <input id="ativo" type="checkbox" [(ngModel)]="contato!.ativo" name="ativo" />
 
     <label for="dataCadastro">Data de Cadastro:</label>
-    <input id="dataCadastro" type="date" [(ngModel)]="contato.dataCadastro" name="dataCadastro" />
+    <input id="dataCadastro" type="date" [(ngModel)]="contato!.dataCadastro" name="dataCadastro" />
 
     <button type="submit">Salvar</button>
   </form>

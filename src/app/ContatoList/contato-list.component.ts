@@ -4,6 +4,7 @@ import { ContatoService } from '../services/contato.service';
 
 @Component({
   selector: 'app-contato-list',
+  standalone: true,
   templateUrl: './contato-list.component.html',
   styleUrls: ['./contato-list.component.css'],
 })
