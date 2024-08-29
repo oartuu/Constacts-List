@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 import { Contato } from './models/contato.model';
 import { ContatoService } from './services/contato.service';
+import { ContatoListComponent } from './ContatoList/contato-list.component';
+import { ContatoFormComponent } from './ContatoForm/contato-form.component';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  imports: [ContatoListComponent, ContatoFormComponent]
 })
 export class AppComponent {
   contatos: Contato[] = [];
